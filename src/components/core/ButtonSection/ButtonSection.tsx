@@ -44,11 +44,11 @@ export function ButtonSection({data, getData}: ButtonSectionProps) {
 
     return(
         <div className="flex justify-center flex-wrap gap-4">
-          <Button color="bg-teal-500" text="New joke" icon={<Zap />} onClick={getJoke} />
-          <Button color="bg-teal-500" text="New joke every 3 secs" icon={<Timer />} onClick={getJokeEveryThreeSeconds} />
-          <Button color="bg-red-500" text="Stop" icon={<TimerOff />} onClick={stopJokeInterval} />
-          <Button color="bg-green-500" text="Add to favourites" icon={<HeartPlus />} onClick={() => data && handleAddToFavourites(data)} disabled={!data || isInFavourites}/>
-          <Button color="bg-gray-500" text="Clear all" icon={<Trash />} onClick={handleClearFavourites} disabled={!favouriteJokes || favouriteJokes.length === 0}/>
+          <Button bgColor="bg-teal-500" text="New joke" icon={<Zap />} onClick={getJoke} />
+          <Button bgColor="bg-teal-500" text="New joke every 3 secs" icon={<Timer />} onClick={getJokeEveryThreeSeconds} />
+          <Button bgColor="bg-red-500" text="Stop" icon={<TimerOff />} onClick={stopJokeInterval} />
+          <Button bgColor="bg-green-500" text="Add to favourites" icon={<HeartPlus />} onClick={() => data && handleAddToFavourites(data)} disabled={!data || isInFavourites}/>
+          <Button bgColor="bg-gray-500" text="Clear all" icon={<Trash />} onClick={handleClearFavourites} disabled={!favouriteJokes || favouriteJokes.length === 0}/>
         </div>
     )
 }
